@@ -1,0 +1,34 @@
+#bingo number guesser
+B = 0
+I = 0
+N = 0
+G = 0
+O = 0
+
+gameList1 = [1,4,8,17,18,19,24,25,37,47,51,66,71]
+gameList2 = [3,7,8,11,63,64,65,71]
+gameList3 = [7,18,19,29,31,40,46,56,60,68]
+gameList4 = [3,7,12,20,21,26,27,29,38,55,57,63,65]
+gameList5 = [35,36,38,43,45]
+
+
+gameList1 = [2,7,8,14,16,21,27,28,30,40,42,44,46,47,48,50,51,52,58,63,64,65,68,69,71,73]
+gameList2 = [1,4,5,7,8,9,16,17,18,19,20,21,22,25,28,30,33,34,35,36,37,44,46,48,50,51,52,53,57,60,61,64,66,67,74,75]
+gameList3 = [3,5,10,11,62,64,67,69,72,74,75]
+
+fullgamelist = [gameList1,gameList2,gameList3]
+
+seen = set()
+repeated = set()
+for l in fullgamelist:
+  for i in set(l):
+    if i in seen:
+      repeated.add(i)
+    else:
+      seen.add(i)
+      
+
+print("l, ",l)
+print("i, ",i)
+
+#print("Repeated: ",repeated)
